@@ -28,6 +28,7 @@ public class Libro{
 
     public Libro(String author, String title, int publishedDate, String isbn, String editor, String category,
             String language, int pages, float price, String _abstract) {
+        super();
         this.author = author;
         this.title = title;
         this.publishedDate = publishedDate;
@@ -38,6 +39,15 @@ public class Libro{
         this.pages = pages;
         this.price = price;
         this._abstract = _abstract;
+        }
+
+
+    public Libro(String author, String title, int publishedDate) {
+        this.author = author;
+        this.title = title;
+        this.publishedDate = publishedDate;
+    }
+       // override di toString
     } 
 
 
