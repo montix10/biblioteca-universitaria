@@ -1,4 +1,6 @@
+//package....
 public class Libro{
+    //manca import package 
     private String author;
     private String title;
     private int publishedDate;
@@ -42,12 +44,23 @@ public class Libro{
         }
 
 
-    public Libro(String author, String title, int publishedDate) {
+    public Libro() { //aggiungi isbn pages e istanza Libro
         this.author = author;
         this.title = title;
         this.publishedDate = publishedDate;
+        //existing info
     }
-       // override di toString
+    //metodi get e set di tutte le istanze 
+    public String getTitle(){
+        return this.title;
+    } 
+    public void setTitle(String title){
+        this.title = title;
+    }
+    //... impostare la java doc do ognuno 
+
+    // override di toString
+
     } 
 
 
